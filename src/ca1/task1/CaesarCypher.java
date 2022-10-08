@@ -11,11 +11,17 @@ public class CaesarCypher {
 	static char[] outputForEncode = new char[' '];
 	static char[] outputForDecode = new char[' '];
 	
-	
+	/**
+	 * An empty constructor.
+	 */
 	public CaesarCypher() {
 	
 	}
-
+	/**
+	 * Return an array that has double the capacity of the method parameter
+	 * @param array The array to resizes
+	 * @return		The resized array. The new array should have double the capacity, and maintain any items in the original. 
+	 */
 	public char[] encode(char[] input, int offset) {
 		
 

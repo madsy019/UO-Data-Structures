@@ -41,4 +41,42 @@ public class Car {
 		this.model = model;
 		this.color = color;
 	}
+	
+	@Override
+	public String toString() {
+		
+		
+		return  this.make +" , "+ this.model +" , "+ this.color;
+	}
+	
+	
+	@Override
+    public boolean equals(Object o) {
+		if(o == this) {
+			return true;
+		}
+		
+		if(!(o instanceof Car)) {
+			return false;
+		}
+		
+		if (o ==null || getClass() != o.getClass()) {
+			return false;
+		}
+		
+		Car c = (Car) o;
+		
+		return  this.color == c.color && this.model == c.model ;
+		
+		
+	}
+	
+	
+	@Override
+	public int hashCode() {
+		int hash = 0;
+		return hash;
+
+	}
+	
 }

@@ -21,10 +21,41 @@ public class CarProcessing {
 		for(Car c : noDuplicates ) {
 			System.out.println(c);
 		}
+		
+
+		
 	}
 	
 	public Car[] removeDuplicates(Car[] inputArray) {
-		return null;
+		
+		
+
+		Car temp = inputArray[0];
+		
+		int count = 0;
+		
+		for(int i =1;i<inputArray.length;i++) {
+			
+			if((inputArray[i].equals(temp)) == false) {
+				count+=1;
+				temp = inputArray[i];
+				
+						
+			}
+	
+		}
+		
+		Car[] newarry = new Car[count];
+		int index= 0;
+		
+		for(int i =1;i<inputArray.length;i++) {
+			if((inputArray[i].equals(temp)) == false) {
+				newarry[index] = inputArray[i];
+				index+=1;
+			}
+		}
+		
+		return newarry;
 	}
 	
 }
