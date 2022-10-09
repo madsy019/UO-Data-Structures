@@ -1,10 +1,12 @@
 package ca1.task4;
 
 public class Car {
+	//instance variables
 	private String make;
 	private String model;
 	private String color;
 	
+	//getters and setters
 	
 	public String getMake() {
 		return make;
@@ -45,7 +47,7 @@ public class Car {
 	@Override
 	public String toString() {
 		
-		
+		// returns the make, model and color
 		return  this.make +" , "+ this.model +" , "+ this.color;
 	}
 	
@@ -74,7 +76,7 @@ public class Car {
 	
 	@Override
 	public int hashCode() {
-		int hash = 0;
+		int hash = 1;
 		return hash;
 
 	}
